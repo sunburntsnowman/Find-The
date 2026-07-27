@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://nmo6d2xt0lqa"]
+
+[ext_resource type="PackedScene" uid="uid://m2j2a7i2cbpj" path="res://box.glb" id="1_g2tbl"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_oq5cr"]
+points = PackedVector3Array(1, 1, 1, 1, 1, -1, -1, 1, 1, 1, -1, 1, 1, -1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1)
+
+[node name="Box" unique_id=282550211 instance=ExtResource("1_g2tbl")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=823447931]
+shape = SubResource("ConvexPolygonShape3D_oq5cr")
